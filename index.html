@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mister Blogger</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <div class="main-screen" onclick="toggleMenu()"></div>
+    <div class="for-modal-screen" onclick="toggleModal()"></div>
+
+    <div class="modal">
+        <h1 class="modal-title">Join us to get access to the latest stories!”</h1>
+        <form onsubmit="">
+            <label for="email" >Email</label>
+            <input type="email" name="user-email" placeholder="e.g username@gmail.com" required>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <button type="button" class="close-btn" onclick="toggleModal()">Close</button>
+    </div>
+
+    <div class="header-bgc">
+        <header class="main-header">
+            <div class="logo">Blogin<span class="green-dot">.</span></div>
+            <ul class="main-nav clean-list">
+                <button class="menu-btn-x" onclick="toggleMenu()">X</button>
+                <li><a href="#" class="nav-link">Journal</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Work</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </header>
+    </div>
+
+    <main class="main-content main-container card-container">
+        <article class="card">
+            <img src="images/image1.jpeg" alt="" class="card-image">
+            <div class="card-contect">
+                <h2 class="card-title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+                <p class="card-first-p">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null a
+                    pariatur...
+                </p>
+                <a class="continue-reading" href="#" onclick="toggleModal()">Continue Reading</a>
+            </div>
+        </article>
+        <article class="card">
+            <img src="images/image2.jpeg" alt="" class="card-image">
+            <div class="card-contect">
+                <h2 class="card-title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+                <p class="card-first-p">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null a
+                    pariatur...
+                </p>
+                <a class="continue-reading" href="#" onclick="toggleModal()">Continue Reading</a>
+            </div>
+        </article>
+        <article class="card">
+            <img src="images/image3.jpeg" alt="" class="card-image">
+            <div class="card-contect">
+                <h2 class="card-title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+                <p class="card-first-p">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null a
+                    pariatur...
+                </p>
+                <a class="continue-reading" href="#" onclick="toggleModal()">Continue Reading</a>
+            </div>
+        </article>
+    </main>
+
+    <div class="paging">
+        <a class="previous" href="#"><span>⬅</span>Previous</a>
+        <a class="next" href="#">Next<span>➞</span></a>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="logo">Blogin<span class="green-dot">.</span></div>
+            <small class="small">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+                Pixelhint.com</small>
+            <ul class="social-links clean-list">
+                <li><a class="facebook" href="#"><img src="images/facebook.png" alt="" class="link-image"></a></li>
+                <li><a class="twitter" href="#"><img src="images/twitter.png" alt="" class="link-image"></a></li>
+                <li><a class="be" href="#"><img src="images/be.png" alt="" class="link-image"></a></li>
+                <li><a class="ball" href="#"><img src="images/basketball.png" alt="" class="link-image ball"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+        }
+        function toggleModal(){
+            document.body.classList.toggle('modal-open');
+        }
+
+    </script>
+
+
+</body>
+
+</html>
